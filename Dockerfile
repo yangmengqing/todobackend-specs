@@ -13,7 +13,6 @@ RUN apt-get update && \
 COPY . /app
 WORKDIR /app
 
-RUN npm install -g mocha && \
-    npm install
+RUN npm install
 
-ENTRYPOINT [ "mocha" ]
+ENTRYPOINT [ "node_modules/mocha/bin/mocha" ]
