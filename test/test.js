@@ -6,7 +6,7 @@ var chai = require('chai'),
     chaiAsPromised = require('chai-as-promised')
 
 chai.use(chaiAsPromised)
-var url = process.env.url || 'http://localhost:8000/todos'
+var url = process.env.URL || 'http://localhost:8000/todos'
 
 describe('Create Todo Item', function(){
     var result;
